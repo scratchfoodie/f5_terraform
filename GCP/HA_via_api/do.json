@@ -13,6 +13,11 @@
             "ui.advisory.text": "/Common/hostname",
             "config.allow.rfc3927": "enable"
         },
+      "myLicense": {
+          "class": "License",
+          "licenseType": "regKey",
+          "regKey": "${regKey}"
+      },
         "myDns": {
             "class": "DNS",
             "nameServers": [

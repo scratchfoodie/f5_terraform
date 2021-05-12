@@ -1,24 +1,27 @@
 # BIG-IP Environment
+# Characters you cannot use in the usecret: # ) ( ; ! | $ < > & ' " ` \ +
+# If deploying BigIP version 11.0.0 or prior, also include } and { in that list.
+
 uname        = "admin"
 usecret      = "my-secret"
 gceSshPubKey = "ssh-rsa xxxxx"
-prefix       = "mydemo123"
+prefix       = "f5tf-test"
 adminSrcAddr = "0.0.0.0/0"
-mgmtVpc      = "xxxxx-net-mgmt"
-extVpc       = "xxxxx-net-ext"
-intVpc       = "xxxxx-net-int"
-mgmtSubnet   = "xxxxx-subnet-mgmt"
-extSubnet    = "xxxxx-subnet-ext"
-intSubnet    = "xxxxx-subnet-int"
-dns_suffix   = "example.com"
+mgmtVpc      = "f5tf-test-net-mgmt"
+extVpc       = "f5tf-test-net-ext"
+intVpc       = "f5tf-test-net-int"
+mgmtSubnet   = "f5tf-test-subnet-mgmt"
+extSubnet    = "f5tf-test-subnet-ext"
+intSubnet    = "f5tf-test-subnet-int"
+dns_suffix   = "us-central1-c.c.sbd-poc.internal"
 
 # BIG-IQ Environment
 bigIqUsername = "admin"
 
 # Google Environment
-gcp_project_id = "xxxxx"
-gcp_region     = "us-west1"
-gcp_zone       = "us-west1-b"
-svc_acct       = "xxxxx@xxxxx.iam.gserviceaccount.com"
+gcp_project_id = "sbd-poc"
+gcp_region     = "us-central1"
+gcp_zone       = "us-central1-c"
+svc_acct       = "terraform-user@sbd-poc.iam.gserviceaccount.com"
 privateKeyId   = "abcdcba123321"
-ksecret        = "svc-acct-secret"
+#ksecret        = "svc-acct-secret"

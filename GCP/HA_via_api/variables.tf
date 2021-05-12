@@ -21,15 +21,15 @@ variable "managed_route1" { default = "192.0.2.0/24" } # adjust to your environm
 
 # BIGIP Image
 variable "bigipMachineType" { default = "n1-standard-8" }
-variable "image_name" { default = "projects/f5-7626-networks-public/global/images/f5-bigip-15-1-2-1-0-0-10-payg-best-10gbps-210115161130" }
+variable "image_name" { default = "projects/f5-7626-networks-public/global/images/f5-bigip-15-1-2-1-0-0-10-byol-all-modules-2boot-loc-0115161130" }
 variable "customImage" { default = "" }
 variable "customUserData" { default = "" }
 
 # BIGIP Setup
 variable "uname" {}
 variable "usecret" {}
-variable "license1" { default = "" }
-variable "license2" { default = "" }
+variable "license1" { default = "NTXGN-EXTWT-STHBM-HIMHM-LEIHFIP" }
+variable "license2" { default = "ZWSBT-FKFVN-UWAVA-LCAEK-GYKTRAF" }
 variable "adminSrcAddr" {}
 variable "gceSshPubKey" {}
 variable "host1_name" { default = "f5vm01" }

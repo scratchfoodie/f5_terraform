@@ -1,4 +1,4 @@
-# Variables
+#Variables
 
 # Google Environment
 variable gcp_project_id {}
@@ -6,9 +6,9 @@ variable gcp_region {}
 variable gcp_zone {}
 variable prefix {}
 variable adminSrcAddr {}
-variable cidr_range_mgmt { default = "10.1.1.0/24" }
-variable cidr_range_ext { default = "10.1.10.0/24" }
-variable cidr_range_int { default = "10.1.20.0/24" }
+variable cidr_range_mgmt { default = "172.16.1.0/24" }
+variable cidr_range_ext { default = "172.16.2.0/24" }
+variable cidr_range_int { default = "172.16.3.0/24" }
 
 # Tags
 variable purpose { default = "public" }
